@@ -1,0 +1,147 @@
+/* Reset básico e estilos iniciais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos para o body */
+body {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #ff6f00;
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-home a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.menu nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu nav ul li {
+    margin-left: 20px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.menu nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o main e suas seções */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home, #sobre {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e4e1e1;
+}
+
+.texto-home, .texto-sobre {
+    flex: 1;
+    padding: 20px;
+}
+
+.img-home, .img-sobre {
+    flex: 1;
+    text-align: center;
+}
+
+.texto-home h1, .texto-sobre h1 {
+    font-size: 28px;
+    color: #ff6f00;
+    margin-bottom: 15px;
+}
+
+.texto-home p, .texto-sobre p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666666;
+}
+
+.texto-home span {
+    font-weight: bold;
+}
+
+.img-home img, .img-sobre img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu nav ul li {
+        margin: 10px 0;
+    }
+
+    #home, #sobre {
+        flex-direction: column;
+    }
+
+    .text-home, .texto-sobre {
+        padding: 20px;
+    }
+}
